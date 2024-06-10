@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+*{
+  font-family: "Syne", sans-serif ;
+}
+html,body{
+    scroll-behavior: smooth;
+   scrollbar-width: thin;   
+}
+*{
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+}
+ .nav-wrapper {
+  background-color: white;
+  padding: 0 2rem;
+  max-width: 1400px;
+  width: 100%;
+}
+.nav-wrapper .brand-logo,
+.nav-wrapper .sidenav-trigger,
+.nav-wrapper .right li a {
+  color: black;
+}
+.nav-wrapper .right li a:hover {
+  background-color: #e0e0e0;
+  color: black;
+}
+#home{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.home-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+ 
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: color;
+  color: #333333;
+  width: 100%;
+  max-width: 1400px;
+}
+.home-content {
+  width: 40%;
+  padding: 20px 50px;
+  margin-left: 50px;
+ color: #333333;
+}
+.home-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.home-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+
+}
+.img{
+    width: 60%;
+    height: 100%;
+
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.btn-primary{
+    display: flex;
+
+}
+.btn-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  margin-right: 10px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+.btn-book {
+  background-color: white !important;
+  color: black;
+  border: 1px solid black;
+}
+.btn-demo {
+  background-color: black !important;
+  color: white;
+  border: 1px solid black;
+}
+.btn-custom:hover {
+  transform: translateY(-6px);
+}
+.btn-book:hover {
+  background-color: #f0f0f0;
+}
+.btn-demo:hover {
+  background-color: #333333;
+}
+.service {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 1.3rem;
+ 
+border-radius: 7px;
+box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.service .content {
+  width: 70%;
+  padding: 0 20px;
+}
+.service .image {
+  width: 30%;
+}
+.service:nth-child(odd) .image {
+  order: 2;
+}
+.service:nth-child(odd) .content {
+  order: 1;
+}
+.max-w{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.image{
+    height:370px ;
+  
+    object-fit: cover;
+    object-position: center;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: calc(1rem - 7px);
+}
+.cen{
+max-width: 1400px;
+padding: 0 3rem;
+}
+.service .btn-primary{
+margin-top: 2rem;
+}
+.vehicle-card .card-image img {
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: calc(1rem - 8px);
+  filter: brightness(0.8);
+}
+.vehicle-card .card-content .card-title {
+  font-size: 1.5rem;
+}
+.about-section {
+padding: 50px 0;
+}
+.about-section h2 {
+margin-bottom: 20px;
+}
+.about-section p{
+font-size: 1.1rem;
+line-height: 1.8;
+}
+hr{
+margin: 0;
+}
+.contact-section {
+padding: 50px 0;
+}
+.contact-section h2 {
+margin-bottom: 20px;
+}
+.contact-section .input-field {
+margin-bottom: 30px;
+}
+.vehicle-card{
+padding: 1rem;
+border-radius: 8px;
+}
+
+#vehicle .btn-primary{
+    flex-direction: column;
+    gap: 20px;
+}
+@media (max-width:1000px){
+.service .image{
+    width: 50%;
+}
+.home-container{
+    flex-direction: column;
+}
+.home-content,.img{
+    width: 100%;
+}
+.home-content{
+    order: 2;
+    margin-left: 0;
+}
+}
+@media (max-width:768px){
+
+.service{
+    flex-direction: column;
+}
+.service .image,.service .content{
+    width: 100%;
+}
+.service .btn-primary{
+    margin-bottom: 1.5rem;
+   
+}
+#vehicle .s12{
+    width: 50%;
+}
+#vehicle .btn-primary{
+    flex-direction: column;
+    gap: 20px;
+}
+#vehicle .h2-pr{
+    width: 100%;
+}
+}
+@media (max-width:600px){
+#vehicle .s12{
+    width: 100%;
+}
+
+}
+@media (max-width:500px){
+.cen{
+    padding: 0;
+}
+.img{
+    height: 50vh;
+}
+.btn-primary{
+    flex-direction: column;
+    gap: 20px;
+}
+
+}
